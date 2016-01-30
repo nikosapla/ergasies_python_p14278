@@ -27,4 +27,4 @@ try:
 	else:
 		print "wrong input"
 except:
-	print ("error..... not number")
+	print "error..... not number"
