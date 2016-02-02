@@ -14,16 +14,15 @@ def weekDay(year, month, day):
     # sum monthly and day offsets
     dayOfWeek += offset[month - 1] + (day - 1)               
     dayOfWeek %= 7
-    return dayOfWeek, week[dayOfWeek]
+    return week[dayOfWeek]
 
     
 try:
-	d= int(input("enter day:"))
-	m= int(input("enter month:"))
-	y= int(input("enter year:"))
+	d, m, y = map(int, raw_input("Enter a date (format dd/mm/yyyy): ").split('/'))
+
 	if 0<d<=31 and 0<m<=12 and 1700<=y<=2099:	 
 	 print (weekDay(y, m, d))
 	else:
-	 print ("wrong day, month or year")
+	 print "wrong day, month or year"
 except:
-	print ("error..... check your input")
+	print "error..... check your input"
