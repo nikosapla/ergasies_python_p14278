@@ -57,6 +57,6 @@ if __name__ == "__main__":
         print "error: syntax is 'python example.py /image/location.jpg'"
     else:
         Analyser = ColorAnalyser(sys.argv[1])
-        Analyser.main()                      #runs with the command _ python askisi13.py example.jpg
+        Analyser.main()                                      #runs with the command _ python askisi13.py example.jpg
 
 	
