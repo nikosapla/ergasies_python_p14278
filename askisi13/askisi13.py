@@ -53,10 +53,10 @@ class ColorAnalyser():
             cv2.waitKey(0)                                  # Waits for keypress before closing
  
 if __name__ == "__main__":
-    if (len(sys.argv) != 2):                                    # Checks if image given as cli argument
+    if (len(sys.argv) != 2):                                    # Checks if image given as cli argument/runs with the command _ python askisi13.py example.jpg
         print "error: syntax is 'python example.py /image/location.jpg'"
     else:
         Analyser = ColorAnalyser(sys.argv[1])
-        Analyser.main()                                      #runs with the command _ python askisi13.py example.jpg
+        Analyser.main()                                      
 
 	
